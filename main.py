@@ -4,7 +4,7 @@ SAIP
 
 """
 import json
-net=open("assosiation.json","r+")
+net=open("association.json","r+")
 
 existing=json.load(net)
 nounsFile=open("nouns.txt","r")
@@ -31,8 +31,8 @@ for keyword in keywords:
 			emotion_association[keyword]=emotion
 
 	association[keyword]=description
-open('assosiation.json', 'w').close()
+open('association.json', 'w').close()
 association.update(emotion_association)
 association.update(existing)
-net=open("assosiation.json","a")
+net=open("association.json","a")
 net.write(json.dumps(association))
