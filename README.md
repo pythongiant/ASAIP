@@ -1,6 +1,7 @@
 # ASAIP
 This is an assistant
-#Troubleshooting
+
+# Troubleshooting
 <li>Try pulling the repo again </li>
 <li>Use python2 to run main.py</li>
 <li>Remove the shebbang line</li>
