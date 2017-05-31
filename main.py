@@ -3,6 +3,7 @@ Simple Artificial Intelligence Program
 SAIP
 
 """
+#!/usr/bin/env python2
 import wolframalpha
 
 client = wolframalpha.Client('5L4TR5-3QRQ88JWA3')
