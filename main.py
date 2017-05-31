@@ -3,7 +3,6 @@ Simple Artificial Intelligence Program
 SAIP
 
 """
-#!/usr/bin/env python2
 import wolframalpha
 
 client = wolframalpha.Client('5L4TR5-3QRQ88JWA3')
@@ -12,7 +11,7 @@ nounsList=nounsFile.read().split("\n")
 nouns=[x.lower() for x in nounsList]
 occurence=0
 keywords=[]
-emotions=["good","bad","cool","gross","dirty","love","sad","dangerous","happy"]
+
 print("\t This is ASAIP-A Simple Artificial Intelligence Program\n")
 input_str=raw_input("I am your personal assistant (for eg. how's the weather) ").split()
 
@@ -25,5 +24,5 @@ for word in keywords:
 	if if_word.lower() == "yes":
 		res = client.query(word)
 		for pod in res.pods:
-			for sub in pod.subpods:
+   			for sub in pod.subpods:
 				print(sub.plaintext)
